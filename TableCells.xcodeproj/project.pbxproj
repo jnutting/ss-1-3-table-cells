@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047969A319509E060000BD33 /* TBTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 047969A219509E060000BD33 /* TBTPerson.m */; };
 		0498D5B119503875004F163F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0498D5B019503875004F163F /* Foundation.framework */; };
 		0498D5B319503875004F163F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0498D5B219503875004F163F /* CoreGraphics.framework */; };
 		0498D5B519503875004F163F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0498D5B419503875004F163F /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		047969A119509E060000BD33 /* TBTPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTPerson.h; sourceTree = "<group>"; };
+		047969A219509E060000BD33 /* TBTPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTPerson.m; sourceTree = "<group>"; };
 		0498D5AD19503875004F163F /* TableCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0498D5B019503875004F163F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0498D5B219503875004F163F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,8 @@
 				0498D5BF19503875004F163F /* TBTAppDelegate.h */,
 				0498D5C019503875004F163F /* TBTAppDelegate.m */,
 				0498D5C219503875004F163F /* Main.storyboard */,
+				047969A119509E060000BD33 /* TBTPerson.h */,
+				047969A219509E060000BD33 /* TBTPerson.m */,
 				0498D5C519503875004F163F /* TBTMasterViewController.h */,
 				0498D5C619503875004F163F /* TBTMasterViewController.m */,
 				0498D5C819503875004F163F /* TBTDetailViewController.h */,
@@ -258,6 +263,7 @@
 				0498D5CA19503875004F163F /* TBTDetailViewController.m in Sources */,
 				0498D5BD19503875004F163F /* main.m in Sources */,
 				0498D5C719503875004F163F /* TBTMasterViewController.m in Sources */,
+				047969A319509E060000BD33 /* TBTPerson.m in Sources */,
 				0498D5C119503875004F163F /* TBTAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +469,7 @@
 				0498D5E419503875004F163F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0498D5E519503875004F163F /* Build configuration list for PBXNativeTarget "TableCellsTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +478,7 @@
 				0498D5E719503875004F163F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
