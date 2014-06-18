@@ -12,6 +12,8 @@
 
 #import "TBTPerson.h"
 
+#import "TBTPersonHolder.h"
+
 @interface TBTMasterViewController ()
 
 @property (copy, nonatomic) NSArray *people;
@@ -42,13 +44,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TBTPerson *person = self.people[indexPath.row];
-
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:person.tableViewCellIdentifier
                                                             forIndexPath:indexPath];
-
-    NSString *name = [NSString stringWithFormat:@"%@ %@", person.firstName, person.lastName];
-    cell.textLabel.text = name;
-    cell.detailTextLabel.text = person.country;
+    
+    if ([cell conformsToProtocol:@protocol(TBTPersonHolder)]) {
+        id <TBTPersonHolder> ptvc = (id)cell;
+        ptvc.person = person;
+    }
     
     return cell;
 }

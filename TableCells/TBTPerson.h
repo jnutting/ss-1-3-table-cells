@@ -34,4 +34,6 @@
 
 + (NSArray *)somePeople;
 
+- (NSString *)tableViewCellIdentifier;
+
 @end

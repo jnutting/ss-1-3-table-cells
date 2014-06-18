@@ -74,4 +74,8 @@
     return people;
 }
 
+- (NSString *)tableViewCellIdentifier {
+    return @"Cell";
+}
+
 @end
